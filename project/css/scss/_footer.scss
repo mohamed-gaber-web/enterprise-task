@@ -1,6 +1,107 @@
-footer {
-    background-color: $primaryColor;
-    height: 100px;
-    color: #fff;
-    padding: 20px 0;
+@import '../scss/variables';
+
+.footer-wrapper {
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0 40px;
+        margin: 30px 0;
+
+        .about-enterprise {
+            width: 60%;
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+
+            @media(min-width: 768px) and (max-width: 1200px) {
+                width: 100%;
+            }
+
+            img {
+                margin-bottom: 20px;
+            }
+            p {
+                color: $darkGrey;
+                font-family: $robotoMFont;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+
+        .footer-links {
+            width: 10%;
+            @media(max-width: 767px) {
+                width: 40%;
+            }
+            @media(min-width: 768px) and (max-width: 1200px) {
+                width: 25%;
+            }
+            margin-top: 50px;
+
+            img {
+                position: relative;
+                top: 5px;
+                padding: 0 2px;
+            }
+
+            h3 {
+                color: $primaryColor;
+                font-family: $robotoMFont;
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    color: #000;
+                    font-family: $IBMFont;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 0.2px;
+                    line-height: 40px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    
+    hr {
+        border-bottom: 1px dotted #dbdbdb;
+    }
+
+    .copy {
+        margin: 50px;
+        text-align: center; 
+        h5 {
+            color: #000;
+            font-family: $robotoMFont;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    
+        p {
+            color: #434343;
+            text-align: center;
+            font-family: $robotoMFont;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+
+    a {
+        color: $primaryColor;
+        font-weight: 600;
+    }
 }
+

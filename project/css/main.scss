@@ -5,6 +5,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -15,4 +16,129 @@
 
 a {
     text-decoration: none;
+}
+
+.enterprise-daily {
+    background-color: $primaryColor;
+    width: 50%;
+    margin: 50px auto;
+    padding: 40px 0;
+    text-align: center;
+
+    @media(max-width: 1024px) {
+        width: 95%;
+    }
+
+    h3 {
+        color: #fff;
+        text-align: center;
+        font-family: $merriweatherFont;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    p {
+        color: #fff;
+        font-family: $robotoMFont;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 25px 0;
+        line-height: 26px;
+    }
+
+    button {
+        background-color: #fff;
+        padding: 10px;
+        font-size: #000;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-family: $robotoMFont;
+        font-weight: 500;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.enterprise-industry {
+    margin: 50px 0;
+
+    .enterprise-industry_btn {
+        text-align: center;
+
+        button {
+            background-color: #000;
+            padding: 10px;
+            color: #fff;
+            font-family: $merriweatherFont;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+        }
+
+        p {
+            color: #000;
+            text-align: center;
+            font-family: $robotoMFont;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+    }
+
+    .item {
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #E1E1E1;
+        height: 200px;
+        margin-top: 20px;
+
+        img.logo {
+            width: 190px;
+            height: auto;
+        }
+
+        p {
+            margin: 15px 0;
+            color: rgba(0, 0, 0, 0.67);
+            font-family: $robotoMFont;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .c-btn {
+            display: flex;
+            align-items: flex-end;
+            align-content: flex-end;
+            button {
+                height: 100%;
+                background-color: #fff;
+                border: 1px solid #E1E1E1;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+    
+                img {
+                    margin-left: 5px;
+                }
+        }
+
+        }
+    }
+}
+
+.orange {
+    border-top: 4px solid $colorOrange !important;
+}
+
+.green {
+    border-top: 4px solid $primaryColor !important;
+}
+
+.darkBlue {
+    border-top: 4px solid #434343 !important;
 }

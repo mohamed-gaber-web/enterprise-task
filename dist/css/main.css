@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+header .middle-header {
+  text-align: center;
+  margin: 20px 0;
+}
+header .middle-header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  align-items: center;
+}
+header .middle-header ul li {
+  color: #8D8D8D;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+header .middle-header ul li::after {
+  content: " | ";
+  color: #E1E1E1;
+  position: relative;
+  left: 15px;
+}
+header .middle-header ul li:last-child::after {
+  content: "";
+}
+header .middle-header ul li img {
+  position: relative;
+  top: 5px;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+}
+header .header ul {
+  list-style: none;
+}
+header .header .header-left ul, header .header .header-right ul {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+}
+header .header .header-left ul li, header .header .header-right ul li {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+header .header .header-left ul li.subscribe, header .header .header-right ul li.subscribe {
+  background-color: #29990B;
+  padding: 10px 20px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  border-radius: 2px;
+}
+header .header .header-left ul li.subscribe a, header .header .header-right ul li.subscribe a {
+  color: #fff !important;
+}
+header .header .header-left ul li a, header .header .header-right ul li a {
+  color: #000;
+}
+header .header .header-left ul li img, header .header .header-right ul li img {
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+header nav.menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+}
+header nav.menu ul li {
+  color: #000;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+header nav.menu ul li::after {
+  content: " | ";
+  color: #E1E1E1;
+  position: relative;
+  left: 15px;
+}
+header nav.menu ul li:last-child::after {
+  content: "";
+}
+
+.footer-wrapper .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 40px;
+  margin: 30px 0;
+}
+.footer-wrapper .footer-container .about-enterprise {
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .footer-wrapper .footer-container .about-enterprise {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer-wrapper .footer-container .about-enterprise {
+    width: 100%;
+  }
+}
+.footer-wrapper .footer-container .about-enterprise img {
+  margin-bottom: 20px;
+}
+.footer-wrapper .footer-container .about-enterprise p {
+  color: #434343;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.footer-wrapper .footer-container .footer-links {
+  width: 10%;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .footer-wrapper .footer-container .footer-links {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer-wrapper .footer-container .footer-links {
+    width: 25%;
+  }
+}
+.footer-wrapper .footer-container .footer-links img {
+  position: relative;
+  top: 5px;
+  padding: 0 2px;
+}
+.footer-wrapper .footer-container .footer-links h3 {
+  color: #29990B;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-wrapper .footer-container .footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-wrapper .footer-container .footer-links ul li {
+  color: #000;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 40px;
+  text-align: left;
+}
+.footer-wrapper hr {
+  border-bottom: 1px dotted #dbdbdb;
+}
+.footer-wrapper .copy {
+  margin: 50px;
+  text-align: center;
+}
+.footer-wrapper .copy h5 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.footer-wrapper .copy p {
+  color: #434343;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.footer-wrapper a {
+  color: #29990B;
+  font-weight: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.enterprise-daily {
+  background-color: #29990B;
+  width: 50%;
+  margin: 50px auto;
+  padding: 40px 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .enterprise-daily {
+    width: 95%;
+  }
+}
+.enterprise-daily h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.enterprise-daily p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 25px 0;
+  line-height: 26px;
+}
+.enterprise-daily button {
+  background-color: #fff;
+  padding: 10px;
+  font-size: #000;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.enterprise-daily button img {
+  margin-right: 10px;
+}
+
+.enterprise-industry {
+  margin: 50px 0;
+}
+.enterprise-industry .enterprise-industry_btn {
+  text-align: center;
+}
+.enterprise-industry .enterprise-industry_btn button {
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+}
+.enterprise-industry .enterprise-industry_btn p {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.enterprise-industry .item {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #E1E1E1;
+  height: 200px;
+  margin-top: 20px;
+}
+.enterprise-industry .item img.logo {
+  width: 190px;
+  height: auto;
+}
+.enterprise-industry .item p {
+  margin: 15px 0;
+  color: rgba(0, 0, 0, 0.67);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.enterprise-industry .item .c-btn {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+.enterprise-industry .item .c-btn button {
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #E1E1E1;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.enterprise-industry .item .c-btn button img {
+  margin-left: 5px;
+}
+
+.orange {
+  border-top: 4px solid #FF7801 !important;
+}
+
+.green {
+  border-top: 4px solid #29990B !important;
+}
+
+.darkBlue {
+  border-top: 4px solid #434343 !important;
+}

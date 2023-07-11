@@ -10,6 +10,16 @@ gulp.task("styles", function () {
     .pipe(gulp.dest("dist/css"));
 });
 
+gulp.task("scripts", function () {
+  return (
+    gulp
+      .src("project/js/*.js")
+      // .pipe(concat("main.css"))
+      .pipe(gulp.dest("dist/js"))
+  );
+});
+
 gulp.task("watch", function () {
   gulp.watch("project/css/**/*.scss", gulp.series("styles"));
+  gulp.watch("project/js/**/*.js", gulp.series("scripts"));
 });
