@@ -45,6 +45,10 @@ header {
         flex-wrap: wrap;
         align-items: center;
         padding: 20px 0;
+        gap: 20px 0;
+        @media(max-width: 480px) {
+            justify-content: center;
+        }
 
         ul {
             list-style: none;
@@ -94,6 +98,7 @@ header {
     nav.menu {
         ul {
             list-style-type: none;
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -123,4 +128,49 @@ header {
             }
         }
     }
+}
+
+
+
+// Menu in mobile 
+
+@media(max-width: 767px) {
+    .menu-mobile {
+        display: block;
+        background-color: #fff;
+        border: 1px solid #E1E1E1;
+        padding: 20px 10px;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                line-height: 35px;
+                color: #000;
+                font-family: $IBMFont;
+                font-size: 14px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+}
+
+#menu {
+    display: none;
+    width: 0;
 }

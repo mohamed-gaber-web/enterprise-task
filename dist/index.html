@@ -24,7 +24,9 @@
         <div class="header">
           <div class="header-left">
             <ul>
-              <li><img src="../project/images/menu-Icon.svg" /></li>
+              <li id="openMenu" style="cursor: pointer">
+                <img src="../project/images/menu-Icon.svg" />
+              </li>
               <li>
                 <img src="../project/images/lang-Icon.svg" /> En
                 <img src="../project/images/arrow-down.svg" />
@@ -98,7 +100,23 @@
           </div>
         </div>
 
-        <nav class="menu">
+        <nav class="menu desktop">
+          <ul>
+            <li>Business</li>
+            <li>Regulation</li>
+            <li>Startups</li>
+            <li>Companies</li>
+            <li>Industries</li>
+            <li>Enterprise for your industry</li>
+            <li>Newsmakers</li>
+            <li>Explainers</li>
+            <li>Archives</li>
+            <li>Talkshows</li>
+            <li>Lifestyle</li>
+          </ul>
+        </nav>
+
+        <nav class="menu-mobile" id="menu">
           <ul>
             <li>Business</li>
             <li>Regulation</li>
@@ -116,6 +134,107 @@
       </div>
     </header>
 
+    <section class="post-container">
+      <div class="container">
+        <div class="post-wrapper">
+          <div class="post-slider">
+            <div class="nav-post">
+              <img src="../project/images/main-logo.png" />
+              <p>Thursday, 14 April 2022</p>
+              <button>
+                Read the full issue
+                <img src="../project/images/arrow-right.svg" />
+              </button>
+              <h4>TL;DR</h4>
+              <div class="main-left_block">
+                <h5>Economy</h5>
+                <p>
+                  Progress in IMF talks, but disagreements remain, says Maait
+                </p>
+              </div>
+              <div class="main-left_block">
+                <h5>Economy</h5>
+                <p>
+                  10 EGX stake sales this year? The gov’t still thinks it’s
+                  possible.
+                </p>
+              </div>
+              <div class="main-left_block">
+                <h5>Debt Watch</h5>
+                <p>
+                  CIRA’s maiden future flow issuance could close next month.
+                </p>
+              </div>
+              <div class="main-left_block">
+                <h5>Development Finance</h5>
+                <p>
+                  British International Investment to invest USD 6 bn in Africa
+                  in coming 5 years ⁠— and some of it should be coming our way.
+                </p>
+              </div>
+              <div class="main-left_block">
+                <h5>What We’re Tracking Today</h5>
+                <p>
+                  Fed delivers another super-sized rate hike ⁠— and there could
+                  be more coming.
+                </p>
+              </div>
+            </div>
+            <div class="main-post">
+              <h3>
+                Progress in IMF talks, but disagreements remain, says Maait
+              </h3>
+              <p>
+                Egypt is working to resolve differences with the IMF in talks
+                for a fresh assistance program, Finance Minister Mohamed Maait
+                said in a round of interviews yesterday.
+              </p>
+              <img src="../project/images/Frame 26.png" />
+            </div>
+          </div>
+
+          <div class="right-post">
+            <h4>Editor’s choice</h4>
+            <img src="../project/images/image 3.png" />
+            <p>
+              Biden Says Any Saudi Visit Would Focus on <br />
+              More Than Energy...
+            </p>
+            <div class="main-right_block">
+              <div class="block">
+                <img src="../project/images/image 4.png" />
+                <p>Live news updates: Inditex profit..</p>
+              </div>
+              <div class="block">
+                <img src="../project/images/image 5.png" />
+                <p>Combative Merkel denies appeasing...</p>
+              </div>
+            </div>
+
+            <div class="main-right_subscribe green">
+              <h3>Get <b> Enterprise </b> daily</h3>
+              <p>
+                The roundup of news and trends that move your markets and shape
+                corporate agendas delivered straight to your inbox.
+              </p>
+              <div class="subscribe-btn">
+                <button>
+                  <img src="../project/images/W-Icon.svg" />Subscribe Here
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <div class="container">
+      <hr />
+      <hr />
+      <hr />
+    </div>
     <section class="enterprise-industry">
       <div class="container">
         <div class="enterprise-industry_btn">
@@ -125,47 +244,66 @@
             tackling the issues that shape your business
           </p>
         </div>
-        <div class="owl-carousel owl-theme">
-          <div class="item green">
-            <img class="logo" src="../project/images/image 10.png" />
-            <p>
-              Egypt wants to become a leader in green <br />
-              hydrogen — here’s how the gov’t and private <br />
-              players plan to make it happen
-            </p>
-            <div class="c-btn">
-              <button>Read <img src="../project/images/Icon Set.svg" /></button>
+        <div class="c-wrapper">
+          <div class="owl-carousel owl-theme">
+            <!-- <div class="owl-prev"></div> -->
+            <div class="item green">
+              <img class="logo" src="../project/images/image 10.png" />
+              <p>
+                Egypt wants to become a leader in green <br />
+                hydrogen — here’s how the gov’t and private <br />
+                players plan to make it happen
+              </p>
+              <div class="c-btn">
+                <button>
+                  Read <img src="../project/images/Icon Set.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="item orange">
+              <img class="logo" src="../project/images/Group 42591 1.png" />
+              <p>
+                What’s next for Nigeria’s startup ecosystem — and how can
+                startups expand there?
+              </p>
+              <div class="c-btn">
+                <button>
+                  Read <img src="../project/images/Icon Set.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="item darkBlue">
+              <img class="logo" src="../project/images/image 9.png" />
+              <p>
+                As a sector, the normally-defensive education industry is
+                tracking the wider market
+              </p>
+              <div class="c-btn">
+                <button>
+                  Read <img src="../project/images/Icon Set.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="item orange">
+              <img class="logo" src="../project/images/image 7.png" />
+              <p>
+                How Egypt compared to global and regional infrastructure PPP
+                trends in 2021
+              </p>
+              <div class="c-btn">
+                <button>
+                  Read <img src="../project/images/Icon Set.svg" />
+                </button>
+              </div>
             </div>
           </div>
-          <div class="item orange">
-            <img class="logo" src="../project/images/Group 42591 1.png" />
-            <p>
-              What’s next for Nigeria’s startup ecosystem — and how can startups
-              expand there?
-            </p>
-            <div class="c-btn">
-              <button>Read <img src="../project/images/Icon Set.svg" /></button>
-            </div>
-          </div>
-          <div class="item darkBlue">
-            <img class="logo" src="../project/images/image 9.png" />
-            <p>
-              As a sector, the normally-defensive education industry is tracking
-              the wider market
-            </p>
-            <div class="c-btn">
-              <button>Read <img src="../project/images/Icon Set.svg" /></button>
-            </div>
-          </div>
-          <div class="item orange">
-            <img class="logo" src="../project/images/image 7.png" />
-            <p>
-              How Egypt compared to global and regional infrastructure PPP
-              trends in 2021
-            </p>
-            <div class="c-btn">
-              <button>Read <img src="../project/images/Icon Set.svg" /></button>
-            </div>
+          <div class="btn-wrap">
+            <button class="prev-btn">
+              <img src="../project/images/left.svg" />
+            </button>
+            <button class="next-btn">
+              <img src="../project/images/right.svg" />
+            </button>
           </div>
         </div>
       </div>
