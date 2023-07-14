@@ -158,6 +158,8 @@ header {
     .desktop {
         display: none;
     }
+
+
 }
 
 @media(min-width: 768px) {
@@ -167,6 +169,10 @@ header {
 
     .desktop {
         display: flex;
+    }
+    
+    .hide-mobile {
+        display: none;
     }
 }
 
