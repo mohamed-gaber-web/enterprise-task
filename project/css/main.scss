@@ -300,7 +300,9 @@ hr {
             gap: 20px;
         }
         .main-post {
-
+        @media(max-width: 767px) {
+            width: 100%;
+        }
             border-right: 1px dotted #E1E1E1;
             padding-right: 5px;
 

@@ -6,7 +6,10 @@
 
 import gulp from "gulp";
 import minifyImage from "gulp-imagemin";
-import sass from "gulp-sass";
+import concat from "gulp-concat";
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
+const sass = gulpSass(dartSass);
 import minify from "gulp-minify";
 
 gulp.task("styles", function () {
